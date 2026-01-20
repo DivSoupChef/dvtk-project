@@ -104,8 +104,8 @@ Source Code: https://github.com/DivSoupChef/dvtk-project/
 
 1. **Клонируйте репозиторий:**
 ```bash
-git clone https://github.com/DivSoupChef/dvtk-landing.git
-cd dvtk-landing
+git clone https://github.com/DivSoupChef/dvtk-project.git
+cd dvtk-project
 ```
 
 2. **Установите зависимости:**
