@@ -1,0 +1,166 @@
+@use '@styles/base/tokens' as *;
+
+/* =========================
+   HEADER BAR
+========================= */
+
+.headerBar {
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid $neutral-200;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+    gap: 24px;
+
+    a {
+      color: $neutral-700;
+      font-weight: 500;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* =========================
+   HEADER EXPANDED NAV
+========================= */
+
+.headerExpanded {
+  position: relative;
+  display: none;
+  padding: 12px 0;
+  background-color: $accent;
+  color: #fff;
+}
+
+/* horizontal nav scroll wrapper */
+.navScroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  white-space: nowrap;
+}
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+
+  svg {
+    transition: transform 0.2s ease;
+  }
+
+  &.active svg {
+    transform: rotate(90deg);
+  }
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  padding: 24px 0;
+
+  background-color: #fff;
+  border: 1px solid $neutral-200;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+
+  &.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* dropdown layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropdownLink {
+  color: $neutral-500;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 481px) {
+  .headerBar {
+    border-bottom: none;
+  }
+
+  .headerExpanded {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .headerBar {
+    .menu {
+      display: flex;
+    }
+  }
+
+  .menuIcon {
+    display: none;
+  }
+}
