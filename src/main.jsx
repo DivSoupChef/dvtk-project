@@ -4,7 +4,7 @@ import App from './App.jsx';
 import './styles/main.scss';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename='/dvtk-landing'>
+  <BrowserRouter basename='/dvtk-project'>
     <App />
   </BrowserRouter>,
 );
