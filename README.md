@@ -1,15 +1,13 @@
-# DVTK landing — Дипломный проект
+# DVTK — Дипломный проект
 
-![DVTK](./public/readme/Thumbnail.jpg "DVTK")
+![DVTK](./public/readme/dvtk.jpg "DVTK")
 
-Современный адаптивный лендинг, разработанный в рамках дипломной работы и доработанный после защиты.  
+Главная страница колледжа, разработанная в рамках дипломной работы и доработанная после защиты.  
 
 Проект включает полный цикл: от дизайна до оптимизированной production-сборки.
 
-Live Demo:
-[![Демо](https://img.shields.io/badge/-@Демо-%23181717?style=flat-square&logo=github)](https://divsoupchef.github.io/dvtk-landing/)
-Source Code: 
-[![GitHub Repository](https://img.shields.io/badge/-@GitHub&nbsp;Repository-%23181717?style=flat-square&logo=github)](https://github.com/DivSoupChef/dvtk-landing/tree/develop)
+Live Demo: https://divsoupchef.github.io/dvtk-project/
+Source Code: https://github.com/DivSoupChef/dvtk-project/
 
 ---
 
